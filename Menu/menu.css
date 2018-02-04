@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Aubrey');
+body{
+    font-family:'Aubrey';
+    color: red;
+}
+
+#menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#title{
+  font-size: 70px;
+  background-image: url("./resources/IMG/lacre.png");
+  background-size: contain;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  text-align: center;
+  line-height: 60px;
+
+  width: 270px;
+  height: 270px;
+}
+
+#menuVert{
+  background-image: url("./resources/IMG/background.gif");
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#menu>button{
+  width:200px;
+  height:100px;
+
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+
+  font-family:'Aubrey';
+  font-size: 30px;
+  color: red;
+
+  background-image: url("./resources/IMG/ButtonTexture.png");
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}

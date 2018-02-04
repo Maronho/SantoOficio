@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="scores.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+      $( document ).ready(function() {
+          console.log( "ready!" );
+          start();
+      });
+      function start(){
+        let highScores = localStorage.getItem("highScores");
+        let name = localStorage.getItem("nome")
+        console.log(highScores);
+
+        let array = highScores.split("||");
+        console.log(array);
+
+        for (var i = 0; i < array.length; i++) {
+
+          let div = $("<div>");
+          let paragraph = $("<p>");
+          paragraph.text(array[i]);
+          div.addClass("highScoresItem");
+
+          div.append(paragraph);
+          $("#highScores").append(div);
+        }
+
+      };
+      function exit(){
+          window.location.href = "../Menu/menu.html";
+      };
+    </script>
+  </head>
+  <body>
+    <div id="menuHor">
+      <div id="menuVert">
+        <h1>Historial de partidas</h1>
+        <div id="highScores"></div>
+        <button onclick="exit()">Volver</button>
+      </div>
+    </div>
+  </body>
+</html>

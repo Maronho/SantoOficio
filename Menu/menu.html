@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+      function start(){
+        let nome = $("#Nombre").val()
+        if(nome!=""){
+          localStorage.setItem("nome",nome);
+          window.location.href = "../Game/game.html";
+        }
+        else{
+          alert("Debes tomar un nombre!");
+        }
+      };
+      function highScores(){
+        window.location.href = "../Scores/scores.html";
+      };
+    </script>
+  </head>
+  <body>
+    <div id="menuVert">
+      <div id="menu">
+         <h1 id="title"><br>Santo<br>Oficio</h1>
+         <h3>Tu nombre:</h3>
+         <input type="text" id="Nombre"></input>
+         <button type="button" onclick="start()">Nueva partida</button>
+         <button type="button" onclick="highScores()">Puntuaciones</button>
+      </div>
+    </div>
+  </body>
+</html>

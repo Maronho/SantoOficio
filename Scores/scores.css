@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Aubrey');
+body{
+    font-family:'Aubrey';
+    color: red;
+    font-size: 35px;
+    background-image: url("./resources/background.gif");
+    background-size: contain;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    width: 100%;
+    height: 100%;
+}
+
+#menuHor{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+#menuVert{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#highScores{
+    border: 2px solid red;
+    overflow:scroll;
+    height: 600px;
+    width: 300px;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+.highScoresItem{
+  border: 1px solid red;
+}

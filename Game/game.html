@@ -1,0 +1,76 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Le Map</title>
+      <link rel="stylesheet" type="text/css" href="game.css">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://resources/demos/style.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="game.js"></script>
+
+  </head>
+  <body>
+    <div id= "top">
+
+      <div id="publicOrder">
+        <h3>Desorden publico: </h3>
+        <span id="ordenMarcador"></span>
+      </div>
+
+      <div id="numerodeagentes">
+        <p>
+          <span>Numero de agentes: </span>
+          <span id="agentesMarcador"></span>
+        </p>
+      </div>
+
+      <div id="oroMarker">
+        <p>
+          <span>Ducados: </span>
+          <span id="oroMarcador"></span>
+        </p>
+      </div>
+
+      <div id="herejeMarker">
+        <p>
+          <span>Herejes capturados: </span>
+          <span id="herejeMarcador"></span>
+        </p>
+      </div>
+
+      <div id="speed">
+        <h3 id="date"></h3>
+        <img id="speedIcon" onClick="cycleSpeed()"></img>
+      </div>
+
+    </div>
+    <div id="center">
+      <div id= "agentSelected" class="menuLat">
+        <h2>Agente</h2>
+        <div id="agentData"></div>
+      </div>
+      <div id="mapa">
+        <!-- <canvas id="canvas"></canvas> -->
+        <div id="dialog-confirm" title="">
+          <p id="hereticDialog" >
+          </p>
+        </div>
+      </div>
+      <div id="menuLat" class="menuLat">
+        <div id="menuLatTitulo">
+          <div>
+            <h2 id="cityName">  </h2>
+            <img id="cityHeraldic"></img>
+          </div>
+          <div id="cityStats">
+          </div>
+        </div>
+        <button class="cityButton" onclick="buyAgent()">Reclutar familiar (250 ducados)</button>
+        <h3>Lista de agentes:</h3>
+        <div id="agentList"></div>
+      </div>
+    </div>
+  </body>
+</html>
